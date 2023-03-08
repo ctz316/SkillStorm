@@ -1,4 +1,4 @@
 package Class_Work.week_02;
 
-public class Day_5_ {
+public class Day_4_Loops {
 }
