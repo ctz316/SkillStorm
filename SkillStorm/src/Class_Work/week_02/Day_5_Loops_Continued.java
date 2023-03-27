@@ -151,46 +151,36 @@ public class Day_5_Loops_Continued {
                     }
             }
 
+            // For Each Ice Cream
             public static void forEachIceCream() {
+                String[] flavors = { "Vanilla",
+                        "Chocolate",
+                        "Mint",
+                        "Cookie Dough",
+                        "Strawberry",
+                        "Rum Raisin",
+                        "Salted Caramel" };
 
-                // Setting array up
-                    String[] flavors = {
-                            "Vanilla",
-                            "Chocolate",
-                            "Mint",
-                            "Cookie Dough",
-                            "Strawberry",
-                            "Salted Caramel",
-                            "Rum Raisin"
-                    };
+                String[] toppings = { "M&Ms",
+                        "Chocolate Chips",
+                        "Oreos",
+                        "Kit Kats",
+                        "Sprinkles",
+                        "Chocolate Syrup",
+                        "Caramel",
+                        "Strawberry",
+                        "Reese's",
+                        "Whipped Cream" };
 
-                // Create topping array
-                    String[] toppings = {
-                            "M&M's",
-                            "Chocolate Chips",
-                            "Oreo's",
-                            "Kit Kat's",
-                            "Sprinkles",
-                            "Chocolate Syrup",
-                            "Caramel",
-                            "Strawberry",
-                            "Reese's",
-                            "Whipped Cream"
-                    };
+                System.out.println("***** Ice Cream *****");
+                // no indexes, executes once for every value in the array
+                for (String flavor : flavors) {
+                    for (String topping : toppings) {
+                        String bowl = flavor + " and " + topping;
 
-                    // NO INDEXES, EXECUTES ONCE FOR EVERY VALUE IN THE ARRAY
-                    for ( String flavor : flavors) {
-                        for (String topping : toppings ) {
-                            String bowl = flavor + " and " + topping;
-
-                            System.out.println(bowl);
-                        }
+                        System.out.println(bowl);
                     }
-
-
-
-
-
+                }
             }
 
 

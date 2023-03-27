@@ -14,18 +14,18 @@ public class Day_3_Interest_Calc_Redone {
                         System.out.println("Will this be for simple interest or compound interest? type 'S' for simple and 'C' for compound interest: ");
                         Scanner in = new Scanner(System.in);
                         answer = in.next();
-                } while ((!answer.equalsIgnoreCase("S")) && (!answer.equalsIgnoreCase("C"))) ;
+                } while ((!answer.equalsIgnoreCase("S")) && !answer.equalsIgnoreCase("C")) ;
 
-            // Switching to correct calculations based on user input
-                if (answer.equalsIgnoreCase("S")) {
-                    simpleInterest();
-                } else if (answer.equalsIgnoreCase("C")) {
-                    compoundInterest();
-                }
-
+                // Switching to correct calculations based on user input
+                        if (answer.equalsIgnoreCase("S")) {
+                            simpleInterest();
+                        } else if (answer.equalsIgnoreCase("C")) {
+                            compoundInterest();
+                        }
         }
 
-        private static String simpleInterest() {
+        // Setting up calculation for Simple Interest Calculation
+                private static String simpleInterest() {
 
             // Declaring Variables
                 double userOriginalAmount;
@@ -36,8 +36,10 @@ public class Day_3_Interest_Calc_Redone {
                 System.out.print("Simple Interest Calculator: Enter the amount: ");
                 Scanner in = new Scanner(System.in);
                 userOriginalAmount = in.nextDouble();
+
                 System.out.print("Enter the interest rate: ");
                 userInterestRate = in.nextDouble();
+
                 System.out.print("Enter the number of years: ");
                 userNumberOfYears = in.nextInt();
                 in.close();
@@ -49,6 +51,7 @@ public class Day_3_Interest_Calc_Redone {
                 return System.out.printf("The interest accrued is: $%.2f%n", interestAccrued).toString(); // Printing the interest accrued in a correct format
         }
 
+        // Setting up calculation for Simple Interest Calculation
         private static String compoundInterest() {
 
             // Creating Variables
@@ -61,8 +64,10 @@ public class Day_3_Interest_Calc_Redone {
                 System.out.print("Compound Calculator: Enter the amount: ");
                 Scanner in = new Scanner(System.in);
                 userOriginalAmount = in.nextDouble();
+
                 System.out.print("Enter the interest rate: ");
                 userInterestRate = in.nextDouble();
+
                 System.out.print("Enter the number of Months: ");
                 userNumberOfMonths = in.nextInt();
                 in.close();
