@@ -1,8 +1,8 @@
 //package massive_Projects.Project_1.Attempt_1.Calculations;
 //
-//import massive_Projects.Project_1.Attempt_1.Charactors.BankRobber;
-////import massive_Projects.Project_1.Attempt_1.Charactors.PonziScheme;
-//import massive_Projects.Project_1.Attempt_1.Charactors.Thief;
+//import massive_Projects.Project_1.Attempt_1.Characters.BankRobber;
+////import massive_Projects.Project_1.Attempt_1.Characters.PonziScheme;
+//import massive_Projects.Project_1.Attempt_1.Characters.Thief;
 //import massive_Projects.Project_1.Attempt_1.Main;
 //
 //import java.util.Scanner;

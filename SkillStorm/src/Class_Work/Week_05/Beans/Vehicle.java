@@ -16,7 +16,10 @@ public class Vehicle {
         this.color = color;
     }
 
-
+@Override
+public String toString() {
+        return "[Vehicle: " + color + ", " + make + ", " + model + "]";
+}
 
 
     // Getters and Setters

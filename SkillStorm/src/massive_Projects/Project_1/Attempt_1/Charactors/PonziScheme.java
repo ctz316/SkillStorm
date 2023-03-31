@@ -1,4 +1,4 @@
-//package massive_Projects.Project_1.Attempt_1.Charactors;
+//package massive_Projects.Project_1.Attempt_1.Characters;
 //
 //public class PonziScheme extends Stats {
 //

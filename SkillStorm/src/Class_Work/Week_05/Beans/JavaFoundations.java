@@ -1,4 +1,4 @@
-package Class_Work.Week_05;
+package Class_Work.Week_05.Beans;
 
 public class JavaFoundations {
 
