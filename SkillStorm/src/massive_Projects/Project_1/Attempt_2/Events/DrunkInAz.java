@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class DrunkInAz {
 
-    public static void welfareCheck(Scanner in, Characters user) {
+    public void welfareCheck(Scanner in, Characters user) {
         System.out.println("\n" + "   ***   Welfare Check   ***");
         System.out.println("Dispatch calls you to respond on a call about a person walking on the sidewalk of a major \n" +
                 "road who is stumbling. Dispatch informs you that the person is described as a male in their mid-20s \n" +

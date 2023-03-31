@@ -6,8 +6,7 @@ import java.util.Scanner;
 
 public class DomesticDisturbance {
 
-
-    public static void domesticDisturbance(Scanner in, Characters user) {
+    public void domesticDisturbance(Scanner in, Characters user) {
         System.out.println("\n" + "   ***   Domestic Disturbance Call   ***");
         System.out.println("Dispatch calls you to respond to a disturbance call. The call came in from a neighbor \n" +
                 "who reports that she is hearing a lot of arguing between a man and a woman and is also hearing \n" +

@@ -12,7 +12,7 @@ public class OpeningStatements {
     private static String patrol;
     private static String sergeant;
 
-      public static Characters openingGreeting(Scanner in) {
+      public Characters openingGreeting(Scanner in) {
 
           int temp;
 

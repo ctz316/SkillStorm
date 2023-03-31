@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Speeder {
 
-        public static void speed(Scanner in, Characters user) {
+        public void speed(Scanner in, Characters user) {
             int temp;
             System.out.println("\n" + "   ***   Speeding   ***");
             System.out.println("You are on patrol on the freeway during the day in an unmarked police car. When " + "\n" +
@@ -116,5 +116,6 @@ public class Speeder {
                 user.addPoints(0);
                 System.out.println("You are opening yourself up to hidden danger in the car.");
             }
+
         }
 }

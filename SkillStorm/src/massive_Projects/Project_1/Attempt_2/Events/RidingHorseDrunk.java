@@ -6,8 +6,7 @@ import java.util.Scanner;
 
 public class RidingHorseDrunk {
 
-
-    public static void horse(Scanner in, Characters user) {
+    public void horse(Scanner in, Characters user) {
         int temp;
         System.out.println("\n" + "   ***   Impaired Person Riding a Horse   ***");
         System.out.println("You respond to a call of a semi-conscious person riding a horse on the side of " +

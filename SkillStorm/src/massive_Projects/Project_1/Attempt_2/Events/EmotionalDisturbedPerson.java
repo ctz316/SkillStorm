@@ -6,8 +6,7 @@ import java.util.Scanner;
 
 public class EmotionalDisturbedPerson {
 
-
-    public static void aggravatedPerson(Scanner in, Characters user) {
+    public void aggravatedPerson(Scanner in, Characters user) {
         System.out.println("\n" + "   ***   Aggravated Person in a Convince Store   ***");
         System.out.println("Dispatch calls you to respond on a call about an aggravated person in a store. The /n " +
                 "person came into the store arguing with someone very loudly and has a broken bottle in his hand. The other customers /n" +

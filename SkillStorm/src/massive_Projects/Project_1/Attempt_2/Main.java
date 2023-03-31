@@ -1,14 +1,8 @@
 package massive_Projects.Project_1.Attempt_2;
 
-import java.util.Scanner;
+import massive_Projects.Project_1.Attempt_2.Events.*;
 
-;
-import static massive_Projects.Project_1.Attempt_2.Events.DomesticDisturbance.domesticDisturbance;
-import static massive_Projects.Project_1.Attempt_2.Events.DrunkInAz.welfareCheck;
-import static massive_Projects.Project_1.Attempt_2.Events.EmotionalDisturbedPerson.aggravatedPerson;
-import static massive_Projects.Project_1.Attempt_2.Events.OpeningStatements.openingGreeting;
-import static massive_Projects.Project_1.Attempt_2.Events.RidingHorseDrunk.horse;
-import static massive_Projects.Project_1.Attempt_2.Events.Speeder.speed;
+import java.util.Scanner;
 
 public class Main {
 
@@ -18,12 +12,24 @@ public class Main {
         Scanner in = new Scanner(System.in);
 
         // Starting game
-        Characters user = openingGreeting(in);
-        welfareCheck(in, user);
-        aggravatedPerson(in, user);
-        speed(in, user);
-        horse(in, user);
-        domesticDisturbance(in, user);
+        OpeningStatements oS = new OpeningStatements();
+        Characters user = oS.openingGreeting(in);
+
+        DrunkInAz wC = new DrunkInAz();
+        wC.welfareCheck(in, user);
+
+        DomesticDisturbance dD = new DomesticDisturbance();
+        dD.domesticDisturbance(in, user);
+
+        Speeder sS = new Speeder();
+        sS.speed(in, user);
+
+        RidingHorseDrunk rH = new RidingHorseDrunk();
+        rH.horse(in, user);
+
+        EmotionalDisturbedPerson eDP = new EmotionalDisturbedPerson();
+        eDP.aggravatedPerson(in, user);
+
         user.gameOver(user);
     }
 }
