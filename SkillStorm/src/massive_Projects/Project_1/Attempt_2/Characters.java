@@ -18,11 +18,11 @@ public class Characters {
     public double finalScore(Characters user) {
         double finalScore;
         if (user.getLevel().equals("recruit")) {
-            return  (points * 1.5);
+            return  (points * 1.5 * 4);
         } else if (user.getLevel().equals("patrol")) {
-            return (points * 1.25);
+            return (points * 1.25 * 4);
         } else {
-            return (points);
+            return (points * 4);
         }
     }
 
