@@ -3,7 +3,7 @@ package Class_Work.Week_06_LinkedLists.Generics;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-public class Foundations {
+public class FoundationsLinkedListGenericClasses {
 
     public static void main(String[] args) {
         //staticStuff();

@@ -8,12 +8,12 @@
 //
 //    public static void main(String[] args) {
 //
-//        ArrayList<Athletes> Athletes = new ArrayList<Athletes>();
-//        Athletes.add(new Athletes("John", 9, 9));
-//        Athletes.add(new Athletes("Joe", 5, 10));
-//        Athletes.add(new Athletes("Mike", 9, 4));
-//        Athletes.add(new Athletes("Jason", 8, 12));
-//        Athletes.add(new Athletes("Kevin", 11, 14));
+//        ArrayList<Athlete> Athlete = new ArrayList<Athlete>();
+//        Athlete.add(new Athlete("John", 9, 9));
+//        Athlete.add(new Athlete("Joe", 5, 10));
+//        Athlete.add(new Athlete("Mike", 9, 4));
+//        Athlete.add(new Athlete("Jason", 8, 12));
+//        Athlete.add(new Athlete("Kevin", 11, 14));
 //    }
 //
 //

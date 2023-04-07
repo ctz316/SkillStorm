@@ -2,7 +2,7 @@
 //
 //import java.util.Comparator;
 //
-//public class Athletes implements Comparable<Athletes> {
+//public class Athlete implements Comparable<Athlete> {
 //
 //    // Variables
 //    private String name;
@@ -12,7 +12,7 @@
 //    private double totalGamesPlayed;
 //
 //    // Constructors
-//    public Athletes(String name, double careerWins, double careerLoses) {
+//    public Athlete(String name, double careerWins, double careerLoses) {
 //        this.name = name;
 //        this.careerWins = careerWins;
 //        this.careerLoses = careerLoses;
@@ -21,7 +21,7 @@
 //    // Overrides
 //    @Override
 //    public String toString() {
-//        return "Athletes{" +
+//        return "Athlete{" +
 //                "name='" + name + '\'' +
 //                ", careerWins=" + careerWins +
 //                ", careerLoses=" + careerLoses +
@@ -31,15 +31,15 @@
 //    }
 //
 //    @Override
-//    public int compareTo(Athletes o1) {
+//    public int compareTo(Athlete o1) {
 //        double thisString = this.winPercent
 //        return 0;
 //    }
 //
 //
-//    public class BetterPlayer implements Comparator<Athletes> {
+//    public class BetterPlayer implements Comparator<Athlete> {
 //        @Override
-//        public double compare(Athletes o1, Athletes o2) {
+//        public double compare(Athlete o1, Athlete o2) {
 //            return o1.getWinPercent().compareto(o2.getWinPercent());
 //        }
 //    }
