@@ -61,6 +61,8 @@ public class Athlete implements Comparable<Athlete> {
         return temp;
     }
 
+
+
     public static Athlete question2(ArrayList<Athlete> xyz) {
         int temp;
         do {
