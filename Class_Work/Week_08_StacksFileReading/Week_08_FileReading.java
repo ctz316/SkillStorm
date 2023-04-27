@@ -9,7 +9,15 @@ public class Week_08_FileReading {
     public static void main(String[] args) throws IOException {
         MyFileReader reader = new MyFileReader();
 
-        reader.readFile();
+//        reader.readFile();
+//        System.out.println("**********************************************************************");
+//        reader.readFile2();
+//        System.out.println("**********************************************************************");
+//        reader.readFile3();
+//        reader.checkForFile();
+//        reader.isFileADirectory();
+//        reader.writeFile();
+        reader.readCSV();
     }
 
 }
