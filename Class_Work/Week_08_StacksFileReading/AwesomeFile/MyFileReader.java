@@ -1,11 +1,16 @@
 package SkillStorm.Class_Work.Week_08_StacksFileReading.AwesomeFile;
 
+import SkillStorm.Class_Work.Week_08_StacksFileReading.Person;
+
 import java.io.*;
+import java.util.LinkedList;
+import java.util.List;
 
 public class MyFileReader {
 
     private final String txtFile = "Class_Work/Week_08_StacksFileReading/AwesomeFile/AwesomeFile.txt";
     private final String txtFile2 = "Class_Work/Week_08_StacksFileReading/AwesomeFile/AwesomeFile2.txt";
+    private final String csvFile = "Class_Work/Week_08_StacksFileReading/AwesomeFile/MyCSV.csv";
 
     public void readFile() throws IOException {
         FileInputStream in = null;
@@ -137,32 +142,49 @@ public class MyFileReader {
     }
 
 //                       *********************************************************************
-//                       **************** Writing a file and print ***************************
-//                       *********(P.S. writes a file or over writes )************************
-    public void readCSV() {
-        final String txtFile3 = "Class_Work/Week_08_StacksFileReading/AwesomeFile/AwesomeFile3.txt";
+//                       **************** Reading a CSV file and print ***********************
+//                       *********************************************************************
 
-        File file = new File(txtFile3);
+        public List<Person> readCSV(){
 
-        try (BufferedWriter bW = new BufferedWriter(new FileWriter(txtFile3))) {
-            bW.write("My New text to a created file.");
-            bW.newLine();
-            bW.write("Chomp Chomp."); // write and append do the same exact thing. overwrite!
-        } catch (IOException ex) {
-            ex.printStackTrace();
+            List<Person> people = new LinkedList<>();
+
+            try (BufferedReader bR = new BufferedReader(new FileReader(csvFile))) {
+                String line;
+                line = bR.readLine(); // This is to read the first line which is the
+                // header and not error out. Needs to be placed before the looping reader starts
+
+                while ((line = bR.readLine()) != null) {
+                    // CSV is a comma seperated value file
+                    String[] vals = line.split(",");
+
+                    Person record = new Person(vals[0].trim(), Integer.parseInt(vals[1].trim()), vals[2].trim());
+                    people.add(record);
+                }
+            } catch (FileNotFoundException ex) {
+                ex.printStackTrace();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+            System.out.println(people);
+            return people;
         }
 
-        // read and print the contents of the file
-        try (BufferedReader bR = new BufferedReader(new FileReader(txtFile3 ))) {
-            String line;
-            while ((line = bR.readLine()) != null) {
-                System.out.println(line);
+//                       *********************************************************************
+//                       **************** Writing a CSV file and print ***********************
+//                       *********************************************************************
+
+    public void writeCSV(List<Person> people){
+        File file = new File("Class_Work/Week_08_StacksFileReading/AwesomeFile/MyCSV_2");
+
+        try (BufferedWriter bW = new BufferedWriter(new FileWriter(file))) {
+            for (Person p : people) {
+                bW.write(p.getName() + "," + p.getAge() + "," + p.getHairColor());
+                bW.newLine();
             }
         } catch (IOException ex) {
             ex.printStackTrace();
         }
     }
 
-
-
-}
+    }
