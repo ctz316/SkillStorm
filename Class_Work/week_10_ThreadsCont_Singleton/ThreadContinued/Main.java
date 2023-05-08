@@ -1,6 +1,4 @@
-package SkillStorm.Class_Work.week_10_ThreadsCont.ThreadContinued;
-
-import SkillStorm.Class_Work.week_10_ThreadsCont.ThreadContinued.ProducerConsumer;
+package SkillStorm.Class_Work.week_10_ThreadsCont_Singleton.ThreadContinued;
 
 import java.util.Random;
 

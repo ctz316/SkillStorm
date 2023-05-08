@@ -1,4 +1,4 @@
-package SkillStorm.Class_Work.week_10_ThreadsCont.ThreadContinued;
+package SkillStorm.Class_Work.week_10_ThreadsCont_Singleton.ThreadContinued;
 
 public class ProducerConsumer {
 

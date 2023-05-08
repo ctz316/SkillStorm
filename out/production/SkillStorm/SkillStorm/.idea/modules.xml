@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Project_2Revised/Project-2.iml" filepath="$PROJECT_DIR$/Project_2Revised/Project-2.iml" />
       <module fileurl="file://$PROJECT_DIR$/SkillStorm.iml" filepath="$PROJECT_DIR$/SkillStorm.iml" />
     </modules>
   </component>

@@ -1,4 +1,4 @@
-package SkillStorm.Class_Work.week_10_ThreadsCont.Singleton;
+package SkillStorm.Class_Work.week_10_ThreadsCont_Singleton.Singleton;
 
 public class Main {
 

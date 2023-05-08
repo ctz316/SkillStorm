@@ -1,25 +1,39 @@
-//package SkillStorm.DailyProjects.Week_10_.Singleton;
-//
-//import SkillStorm.Class_Work.week_10_ThreadsCont.Singleton.RingOfPower;
-//
-//public class DNASequence {
-//
-//    // variables
-//    private static DNASequence instance = null;
-//    char Adenine = 'A';
-//    char Thymine = 'T';
-//    char Cytosine = 'C';
-//    char Guanine = 'G';
-//
-//
-//    // constructor
-//    private DNASequence(char W, char X, char Y, char Z) {
-//        Adenine = W;
-//        Thymine = X;
-//        Cytosine = Y;
-//        Guanine = Z;
-//    }
-//
-//    public static DNASequence
-//
-//}
+package SkillStorm.DailyProjects.Week_10_.Singleton;
+
+public class DNASequence {
+
+    // variables
+    private static DNASequence instance = null;
+    private String dNA;
+
+    // constructor
+    private DNASequence(String dNA) {
+        this.dNA = dNA;
+    }
+
+    // 2nd Constructor to connect the private constructor
+    public static DNASequence getInstance(String dNA) {
+        if (instance == null) {
+            instance = new DNASequence(dNA);
+        }
+        return instance;
+    }
+
+    // methods
+    public String getDNA() {
+        return "Your DNA is made up of: " + Adenine() + Thymine() + Cytosine() + Guanine();
+    }
+    public String Adenine() {
+        return "Adenine";
+    }
+    public String Thymine() {
+        return ", Thymine";
+    }
+    public String Cytosine() {
+        return ", Cytosine";
+    }
+    public String Guanine() {
+        return ", Guanine";
+    }
+
+}
