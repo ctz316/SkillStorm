@@ -1,0 +1,21 @@
+This is my text file
+
+it has some text in it
+
+Red
+Blue
+Purple
+Black
+Pink
+Chartreuse
+Burnt Umber
+Hot Mauve
+White
+Yellow
+Green
+
+Thursday
+Friday
+
+27
+32

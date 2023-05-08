@@ -1,0 +1,16 @@
+
+package com.skillsotrm.beans;
+
+public class MyCounter extends Thread {
+
+	
+
+
+	@Override // Shentill Floyd
+	public void run() {
+		for (int i = 0; i < 200; i+=6) {
+			System.out.print(i + " ");
+		}
+		System.out.println();
+	}
+}
